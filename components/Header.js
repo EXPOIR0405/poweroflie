@@ -4,6 +4,7 @@ import SearchIcon from './SearchIcon';
 import MenuIcon from './MenuIcon';
 import SearchBar from './SearchBar';
 import SideMenu from './SideMenu';
+import Link from 'next/link';
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -22,7 +23,16 @@ export default function Header() {
       <header className="fixed top-0 w-full bg-white z-50 border-b">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-16">
-            <img src="/images/logo.png" alt="로고" className="h-12" />
+            <div className="flex items-center gap-2">
+              <Link href="/" className="flex items-center gap-2">
+                <img 
+                  src="/images/small-logo.png" 
+                  alt="국민의짐 로고" 
+                  className="h-8 w-8"
+                />
+                <h1 className="text-2xl font-bold">국민의짐</h1>
+              </Link>
+            </div>
             <ul className="hidden lg:flex space-x-8">
               {Object.keys(menuItems).map((menu) => (
                 <li 

@@ -27,7 +27,7 @@ export default function MainBanner() {
         <div className="relative h-screen flex items-center justify-center">
           <img 
             src="/images/main-banner.png"
-            alt="민생경제 살피겠습니다 키우겠습니다"
+            alt="민생경제 살피겠냐?"
             className="max-w-[800px] w-full transition-transform duration-100"
             style={{ transform: `scale(${scale})` }}
           />
@@ -35,7 +35,6 @@ export default function MainBanner() {
       </div>
       <PartyIntro />
       <SnsSection />
-      <NewsSection />
     </>
   );
 } 
