@@ -33,7 +33,7 @@ export default function MediaNewsSection() {
         {/* 포토뉴스 섹션 */}
         <section>
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">포토뉴��</h2>
+            <h2 className="text-xl font-bold">포토뉴스</h2>
             <span className="text-gray-500">총 6,422건</span>
             <button className="text-gray-400">+</button>
           </div>

@@ -40,12 +40,15 @@ export default function Header() {
                   className="relative"
                   onMouseEnter={() => setActiveMenu(menu)}
                 >
-                  <a href={`/${menu}`} className="hover:text-red-600 font-bold text-lg">
+                  <Link 
+                    href={menu === 'support' ? '/sponsor' : `/${menu}`} 
+                    className="hover:text-red-600 font-bold text-lg"
+                  >
                     {menu === 'intro' && '소개'}
                     {menu === 'news' && '소식'}
                     {menu === 'members' && '당원'}
                     {menu === 'support' && '후원'}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -96,12 +99,12 @@ export default function Header() {
                     <ul className="space-y-2">
                       {menuItems[menu].map((item) => (
                         <li key={item}>
-                          <a 
-                            href="#" 
+                          <Link 
+                            href={menu === 'support' ? '/sponsor' : '#'} 
                             className="text-sm hover:text-red-600 hover:bg-gray-50 block py-2 px-3 rounded font-normal transition-colors duration-200"
                           >
                             {item}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
