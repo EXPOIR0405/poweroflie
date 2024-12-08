@@ -5,11 +5,11 @@ export default function MediaNewsSection() {
   const photoNews = [
     {
       id: 1,
-      title: '긴급최고위원회의',
-      date: '2024-12-06',
-      image: '/images/photo1.jpg',
+      title: '원내무책임회의',
+      date: '2024-12-07',
+      image: '/images/photo1.png',
       views: 150,
-      description: '6일 오전 한동훈 당 대표는 서울 여의도 국회 회의실에서 긴급최고위원회의를 열었다.',
+      description: '오늘 추경호 원내대표는 무대책 회의를 열어 ‘우리는 탄핵에 관여하지 않겠습니다’라는 입장을 발표했습니다. 회의 내용을 요약하자면 다음과 같습니다. 어떻게 하면 아무것도 하지 않고 국민을 더 실망시킬 수 있을까? 대책회의라 쓰고 시간 낭비라 읽는거죠. ',
       tags: ['국민의힘', '한동훈', '당 대표', '국무총리']
     },
     // ... 더 많은 포토 뉴스
@@ -18,9 +18,9 @@ export default function MediaNewsSection() {
   const videoNews = [
     {
       id: 1,
-      title: '[Live] 12월 8일 한동훈 국민의힘 대표 담화',
+      title: '[Live] 대국민 변명 대잔치',
       date: '2024-12-08',
-      thumbnail: '/images/video1.jpg',
+      thumbnail: '/images/video1.png',
       views: 127,
       tags: ['국민의힘', '한동훈', '당 대표', '국무총리']
     },

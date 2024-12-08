@@ -12,27 +12,36 @@ export default function NewsSection() {
     {
       id: 1,
       category: '카드뉴스',
-      title: '연평도 포격 14주기',
-      date: '2024-11-22',
-      content: '감행한 안보태세로 한 치의 빈틈없이 국민의 생명과 안전을 끝까지 지키겠습니다.',
-      thumbnail: '/images/news1.jpg'
+      title: '대통령 독재 선언 7일차: 잊지 않겠습니다, 국민의 짐',
+      date: '2024-12-09',
+      content: '국민의 희생으로 나라를 망치고자 했던 무책임, 기억하겠습니다',
+      thumbnail: '/images/news4.png'
     },
     {
       id: 2,
       category: '보도자료',
-      title: '대국민 공동 담화문 주요내용 [보도자료]',
-      date: '2024-12-08',
-      content: '대국민 공동 담화문 주요내용은 다음과 같다. <한동훈 당 대표> - 국민의 희생으로 일구어 낸 자유민주주의는 대한민국의 자부심입니다...',
-      thumbnail: null
+      title: '대국민 변명문: 모든 책임은 민주당 때문입니다',
+      date: '2024-12-09',
+      content: '대국민 변명문 담화문 주요내용은 다음과 같다. 계엄령과 경제 파탄은 우리 당의 역사적 업적입니다',
+      thumbnail: '/images/news.png'
     },
     {
       id: 3,
       category: '보도자료',
-      title: '대국민 공동 담화문 주요내용 [보도자료]',
-      date: '2024-12-08',
-      content: '대국민 공동 담화문 주요내용은 다음과 같다. <한동훈 당 대표> - 국민의 희생으로 일구어 낸 자유민주주의는 대한민국의 자부심입니다...',
-      thumbnail: null
+      title: '무책임한 정당, 탄핵표도 던지지 않았다.',
+      date: '2024-12-09',
+      content: '국민이 탄핵을 요구했지만, 우리당은 외면했습니다. 하지만 다음 선거 자신있습니다',
+      thumbnail: '/images/news3.png'
     },
+    {
+      id: 4,
+      category: '정책홍보',
+      title: '',
+      date: '2024-12-09',
+      content: '',
+      thumbnail: '/images/news5.png'
+    }
+
     // ... 더 많은 뉴스 아이템
   ];
 

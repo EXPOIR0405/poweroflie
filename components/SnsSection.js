@@ -46,7 +46,7 @@ export default function SnsSection() {
     <div className="w-full bg-gray-50 py-8">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-6">
-          <h2 className="text-xl font-bold">SNS 구독하고 우리의 변명도 실시간으로 받아보세요!</h2>
+          <h2 className="text-xl font-bold">SNS 구독하고 저희의 변명도 실시간으로 받아보세요!</h2>
         </div>
         <div className="flex justify-center items-center gap-6">
           {snsLinks.map((sns) => (

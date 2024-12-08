@@ -1,36 +1,20 @@
 'use client';
-import { useState, useEffect } from 'react';
 import PartyIntro from './PartyIntro';
 import SnsSection from './SnsSection';
 import NewsSection from './NewsSection';
 
 export default function MainBanner() {
-  const [scale, setScale] = useState(1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY;
-      if (scrolled < 300) {
-        const newScale = 1 + (0.2 * (1 - scrolled / 300));
-        setScale(newScale);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <>
-      <div className="relative w-full bg-white">
-        {/* 메인 배너 */}
+      <div className="relative w-full bg-white overflow-hidden">
         <div className="relative min-h-[calc(100vh-64px)] flex items-center justify-center pt-16">
-          <img 
-            src="/images/main-banner.png"
-            alt="민생경제 살피겠냐?"
-            className="max-w-[800px] w-full transition-transform duration-100"
-            style={{ transform: `scale(${scale})` }}
-          />
+          <div className="w-full overflow-hidden flex items-center justify-center">
+            <img 
+              src="/images/main-banner3.png"
+              alt="민생경제 살피겠냐?"
+              className="w-[1200px] object-cover object-center transform scale-150 md:scale-100"
+            />
+          </div>
         </div>
       </div>
       <PartyIntro />
