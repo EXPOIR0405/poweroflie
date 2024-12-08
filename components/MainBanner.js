@@ -24,7 +24,7 @@ export default function MainBanner() {
     <>
       <div className="relative w-full bg-white">
         {/* 메인 배너 */}
-        <div className="relative h-screen flex items-center justify-center">
+        <div className="relative min-h-[calc(100vh-64px)] flex items-center justify-center pt-16">
           <img 
             src="/images/main-banner.png"
             alt="민생경제 살피겠냐?"

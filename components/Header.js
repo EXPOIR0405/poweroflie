@@ -20,9 +20,9 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 w-full bg-white z-50 border-b">
-        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-16">
+      <header className="sticky top-0 w-full bg-white z-50 border-b">
+        <nav className="w-full px-2 py-4 flex items-center justify-between">
+          <div className="flex items-center">
             <div className="flex items-center gap-2">
               <Link href="/" className="flex items-center gap-2">
                 <img 
@@ -33,7 +33,7 @@ export default function Header() {
                 <h1 className="text-2xl font-bold">국민의짐</h1>
               </Link>
             </div>
-            <ul className="hidden lg:flex space-x-8">
+            <ul className="hidden lg:flex space-x-8 ml-16">
               {Object.keys(menuItems).map((menu) => (
                 <li 
                   key={menu}
@@ -54,7 +54,7 @@ export default function Header() {
             </ul>
           </div>
 
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4">
             <div className="hidden lg:flex items-center space-x-6 text-sm">
               <a href="#" className="hover:text-red-600">로그인</a>
               <a href="#" className="hover:text-red-600">당원가입</a>

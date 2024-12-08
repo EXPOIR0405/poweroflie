@@ -5,7 +5,7 @@ import JoinSection from '../components/JoinSection';
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex-1 flex flex-col w-full">
       <MainBanner />
       <NewsSection />
       <MediaNewsSection />

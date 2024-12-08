@@ -24,13 +24,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
-      <head />
-      <body>
-        <Header />
-        {children}
-        <FloatingMenu />
-        <Footer />
+    <html lang="ko" className="w-full h-full">
+      <head>
+        <meta 
+          name="viewport" 
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+      </head>
+      <body className="w-full min-h-screen flex flex-col overflow-x-hidden touch-none">
+        <div className="flex flex-col w-full overflow-x-hidden">
+          <Header />
+          {children}
+          <FloatingMenu />
+          <Footer />
+        </div>
       </body>
     </html>
   );

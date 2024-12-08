@@ -1,11 +1,16 @@
 export default function SideMenu({ onClose }) {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-      <div className="absolute right-0 top-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300">
+    <div className="fixed inset-0 bg-white z-50">
+      <div className="h-full overflow-y-auto">
         <div className="p-4">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-xl font-bold">전체메뉴</h2>
-            <button onClick={onClose} className="text-2xl">&times;</button>
+            <button 
+              onClick={onClose} 
+              className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100"
+            >
+              <span className="text-2xl leading-none">&times;</span>
+            </button>
           </div>
           
           <nav className="space-y-6">
